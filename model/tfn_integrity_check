@@ -1,0 +1,22 @@
+package ato.superannuation
+tfn_integrity_check
+
+Person
+ tfn:(http://dxa.gov.au/definition/edu/edu416)
+ birthDate:(http://dxa.gov.au/definition/trc/de36)
+ familyName:(http://dxa.gov.au/definition/trc/de40)
+ givenName:(http://dxa.gov.au/definition/trc/de41)
+ otherName:(http://dxa.gov.au/definition/trc/de42)
+ address:Address
+ 
+Address
+ usage:(http://dxa.gov.au/definition/trc/de23)
+ line1:(http://dxa.gov.au/definition/trc/de17)
+ line2:(http://dxa.gov.au/definition/trc/de18)
+ line3:(http://dxa.gov.au/definition/trc/de167)
+ line4:(http://dxa.gov.au/definition/trc/de80)
+ suburb:(http://dxa.gov.au/definition/trc/de19)
+ postcode:(http://dxa.gov.au/definition/trc/de21)
+ state:(http://dxa.gov.au/definition/trc/de22)
+ country:(http://dxa.gov.au/definition/trc/de528)
+ 
