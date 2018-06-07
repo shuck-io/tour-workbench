@@ -1,0 +1,73 @@
+package ato.superannuation
+rollover
+
+Request
+ sender:Sender
+ receiver:Receiver
+ member:Member[]
+ 
+Receiver
+ organisation:Organisation
+ 
+Member
+ transferring:FundMembership
+ receiving:FundMembership
+ usi:(https://super.shuck.io/define/de1)
+ person:Person
+ sex:(https://super.shuck.io/define/de2)
+ birthDate:(http://dxa.gov.au/definition/trc/de36)
+ address:Address
+ tfnProvided:(http://dxa.gov.au/definition/ss/de12710)
+ wholeBalance:(http://dxa.gov.au/definition/ss/de12700)
+ requestAmount:(http://dxa.gov.au/definition/ss/de12701)
+ id:(http://dxa.gov.au/definition/ss/de7396)
+ /**
+ Not to be used unless the legislation specifies how
+ */
+ details:OtherDetails[]
+ 
+FundMembership
+ abn:(http://dxa.gov.au/definition/trc/de26)
+ usi:(http://dxa.gov.au/definition/trc/de7395)
+ 
+/**
+Name and Value pair for any potential future needs
+*/
+OtherDetails
+ name:string
+ value:string
+ 
+Sender
+ organisation:Organisation
+ person:Person
+ email:Email
+ phone:Phone
+ 
+Address
+ usage:(http://dxa.gov.au/definition/trc/de23)
+ line1:(http://dxa.gov.au/definition/trc/de17)
+ line2:(http://dxa.gov.au/definition/trc/de18)
+ line3:(http://dxa.gov.au/definition/trc/de167)
+ line4:(http://dxa.gov.au/definition/trc/de80)
+ suburb:(http://dxa.gov.au/definition/trc/de19)
+ postcode:(http://dxa.gov.au/definition/trc/de21)
+ state:(http://dxa.gov.au/definition/trc/de22)
+ country:(http://dxa.gov.au/definition/trc/de528)
+ 
+Organisation
+ typeCode:(http://dxa.gov.au/definition/trc/de64)
+ name:(http://dxa.gov.au/definition/trc/de55)
+ 
+Person
+ familyName:(http://dxa.gov.au/definition/trc/de40)
+ givenName:(http://dxa.gov.au/definition/trc/de41)
+ otherName:(http://dxa.gov.au/definition/trc/de42)
+ position:(http://dxa.gov.au/definition/trc/de1601)
+ 
+Email
+ usageCode:(http://dxa.gov.au/definition/trc/de93)
+ address:(http://dxa.gov.au/definition/trc/de6)
+ 
+Phone
+ usageCode:(http://dxa.gov.au/definition/trc/de53)
+ number:(https://super.shuck.io/define/de3)
